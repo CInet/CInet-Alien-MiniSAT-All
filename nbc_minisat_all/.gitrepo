@@ -6,7 +6,7 @@
 [subrepo]
 	remote = https://github.com/taboege/nbc_minisat_all
 	branch = master
-	commit = df9b6520d6867cc60233970ecd77b4d462f86816
-	parent = c084c077aa52d480ce6b76e2f9b20088abd62bf0
+	commit = 281d5b0cfdcf03376947ecdebb0ebb351fcdf2f5
+	parent = 3b3743a6320f588fc9661c430f4b9e87833bf228
 	method = merge
 	cmdver = 0.4.0

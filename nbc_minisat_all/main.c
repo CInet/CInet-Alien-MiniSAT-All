@@ -244,6 +244,8 @@ int main(int argc, char** argv)
           break;
         case '?': case 'h': default:
           PRINT_USAGE(argv[0]); return  0;
+	case 'V':
+	  printf("%s: %s\n", argv[0], VERSION); return  0;
         }
       } else {
         if(infile == NULL)        {infile  = argv[i];}

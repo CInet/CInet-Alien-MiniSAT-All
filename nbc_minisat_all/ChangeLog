@@ -1,3 +1,8 @@
+nbc_minisat_all v1.0.2.b Released Sep. 8th 2020
+========================================
+* allow communication through standard file descriptors.
+* add -V switch to print version information.
+
 nbc_minisat_all v1.0.2 Released Apr. 1st 2018
 ========================================
 * changed the type of cpu_time of printStats from int to unsigned long, to

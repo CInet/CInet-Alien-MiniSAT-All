@@ -14,6 +14,7 @@ EXEC      = nbc_minisat_all
 
 CC        = gcc
 CFLAGS    = -std=c99
+CFLAGS   += -DVERSION='"$(file <VERSION)"'
 COPTIMIZE = -O3 -fomit-frame-pointer
 
 
