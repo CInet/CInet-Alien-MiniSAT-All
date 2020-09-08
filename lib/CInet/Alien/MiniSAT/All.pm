@@ -86,6 +86,11 @@ sub nbc_minisat_all {
 
 =item *
 
+The academic paper about the AllSAT solvers developed by Toda and Soh
+is L<https://dl.acm.org/doi/10.1145/2975585>.
+
+=item *
+
 The original source code for C<nbc_minisat_all> is on Takahisa Toda's
 website L<http://www.sd.is.uec.ac.jp/toda/code/nbc_minisat_all.html>.
 
