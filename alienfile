@@ -16,7 +16,7 @@ share {
 
     build [
         'make rs',
-        'install -t %{alien.install.prefix} nbc_minisat_all_static',
+        'install -t %{.install.prefix} nbc_minisat_all_static',
     ];
 };
 
