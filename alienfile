@@ -1,0 +1,32 @@
+use alienfile;
+use autodie;
+
+use File::Spec::Functions;
+use IPC::Run3;
+
+configure {
+    requires 'File::Spec::Functions';
+    requires 'IPC::Run3';
+};
+
+share {
+    start_url 'nbc_minisat_all/';
+    plugin 'Fetch::LocalDir';
+    plugin 'Extract::Directory';
+
+    build [
+        'make rs',
+        'install -t %{alien.install.prefix} nbc_minisat_all_static',
+    ];
+};
+
+gather sub {
+    my $build = shift;
+    my $exename = $build->runtime_prop->{exename} =
+        'nbc_minisat_all_static';
+
+    my $exe = catfile($build->install_prop->{prefix}, $exename);
+    run3 [$exe, '-V'], \undef, \my $stdout;
+    $stdout =~ /nbc_minisat_all(?:_\w+)?: ([0-9.a-z]+)/;
+    $build->runtime_prop->{version} = $1;
+};
