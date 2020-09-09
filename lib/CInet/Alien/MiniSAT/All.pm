@@ -112,6 +112,14 @@ This software is copyright (C) 2020 by Tobias Boege.
 This is free software; you can redistribute it and/or
 modify it under the terms of the Artistic License 2.0.
 
+=head2 Bundled software
+
+The C<nbc_minisat_all> solver is Copyright (C) 2015 by Takahisa Toda
+who released it under the MIT license.
+
+Toda's work is based on C<minisat> which is Copyright (C) 2005 by
+Niklas Sorensson who released it under the MIT license.
+
 =cut
 
 ":wq"
